@@ -24,10 +24,8 @@ current_temp = round(random.uniform(60,80),2)
 
 
 #Here is a timed version using current time
-if current_time > 7 and current_time < 20 and current_day == "Saturday":
-    temp_set = 72
-if current_time > 20 or current_time < 7:
-    temp_set = 68
+
+
 if current_day == "Sunday":
     if current_time > 7 and current_time < 20:
         temp_set = 72
@@ -39,8 +37,32 @@ if current_day == "Monday":
         temp_set = 72
     if current_time > 20 or current_time < 7:
         temp_set = 68
+if current_day == "Tuesday":
+    if current_time > 7 and current_time < 9:
+        temp_set = 72
+    if current_time > 20 or current_time < 7:
+        temp_set = 68
+if current_day == "Wednesday":
+    if current_time > 7 and current_time < 9:
+        temp_set = 72
+    if current_time > 20 or current_time < 7:
+        temp_set = 68
+if current_day == "Thursday":
+    if current_time > 7 and current_time < 9:
+        temp_set = 72
+    if current_time > 20 or current_time < 7:
+        temp_set = 68
+if current_day == "Friday":
+    if current_time > 7 and current_time < 9:
+        temp_set = 72
+    if current_time > 20 or current_time < 7:
+        temp_set = 68
 
-
+if current_day == "Saturday":
+    if current_time > 7 and current_time < 9:
+        temp_set = 72
+    if current_time > 20 or current_time < 7:
+        temp_set = 68
 
 
 #Printing for sake of testing so you know what the temperature setting is for sor
